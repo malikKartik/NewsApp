@@ -48,6 +48,7 @@ This is one way to run your app — you can also run it directly from within And
 
 ### Assumptions and Key pointers
  - An actual HTTP request is not being made as there is no Free API which is serving more than 100 responses at a time. I have created a mock response and a mock request which returns a promise.
+ - Easy UX and clean UI
  - For animations, I have used react-native-reanimated
  - For gesture handling, I have used react-native-gesture-handler
  - For data storage, I am using react-native-mmkv
