@@ -7,7 +7,7 @@ import reload from '../../../assets/reload.png';
 
 export const Home = () => {
     const {news, pinnedNews, pinNews, getMoreNews, isLoading, deleteNews} = useGetNews();
-    // const resetTimer = useIntervalTrigger(getMoreNews, 40*1000)
+    const resetTimer = useIntervalTrigger(getMoreNews, 10*1000)
     const onLoadPress = () => {
       getMoreNews();
     }
@@ -26,7 +26,7 @@ export const Home = () => {
         }}
         refreshing={isLoading}
         onRefresh={() => {
-          // resetTimer()
+          resetTimer()
           getMoreNews()
         }}
         style={{flex: 1}}
